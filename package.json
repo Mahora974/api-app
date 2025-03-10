@@ -1,6 +1,7 @@
 {
   "name": "api-app",
   "version": "1.0.0",
+  "type": "module",
   "description": "Service métier validant les tokens JWT et interagissant avec MySQL",
   "main": "index.js",
   "scripts": {
