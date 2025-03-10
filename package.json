@@ -1,26 +1,25 @@
 {
-    "name": "api-app",
-    "version": "1.0.0",
-    "description": "Service métier validant les tokens JWT et interagissant avec MySQL",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js",
-      "dev": "nodemon index.js"
-    },
-    "dependencies": {
-      "dotenv": "^16.0.3",
-      "express": "^4.18.2",
-      "jsonwebtoken": "^9.0.0",
-      "cors": "^2.8.5",
-      "mysql2": "^3.3.0"
-    },
-    "devDependencies": {
-      "nodemon": "^3.0.0"
-    },
-    "engines": {
-      "node": ">=16.0.0"
-    },
-    "author": "",
-    "license": "MIT"
-  }
-  
+  "name": "api-app",
+  "version": "1.0.0",
+  "description": "Service métier validant les tokens JWT et interagissant avec MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --node=prod",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,13 +1,14 @@
-require('dotenv').config();
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const mysql = require('mysql2/promise');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const envFile = process.env.NODE_ENV === 'prod' ? '.env.prod' : '.env.dev';
+const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET;
 
+dotenv.config({ path: envFile });
 app.use(express.json());
 app.use(cors());
 
