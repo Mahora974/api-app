@@ -5,7 +5,7 @@ const cors = require('cors');
 const mysql = require('mysql2/promise');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET;
 
 app.use(express.json());
